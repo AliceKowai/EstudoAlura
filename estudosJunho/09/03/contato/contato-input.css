@@ -1,0 +1,8 @@
+.contato__input{
+    height: 2.2rem;
+    margin: 1rem;
+}
+
+.contato__input.mensagem{
+    height: 15rem;
+}

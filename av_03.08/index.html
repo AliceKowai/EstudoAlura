@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <title>Prova-03/08</title>
+    <style>
+        body{
+            font-family: Roboto;
+            list-style: none;
+        }
+        h2{
+            color: rgb(15, 15, 191)!important;
+        }
+        .logo{
+            border-radius: 2%;
+        }
+        .imagem-perfil{
+            width: 200px;
+        }
+        .visaoGeral{
+            background-color: rgb(33, 195, 68);
+            height: 50px;
+        }
+        .textgreen{
+            color: rgb(33, 195, 68);
+        }
+        .cc{
+            background-image: url(img/group18.png);
+            background-repeat: no-repeat;
+        }
+        .icon{
+            width: 25px;
+            height: 25px;
+        }
+        .botao{
+            width: 100px;
+            height: 50px;
+        }
+        .cartao{
+            border-bottom: solid blue 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-cimaSite bg-dark row gap-1 pb-1">
+            <div class="logo col-2 mr-2 bg-white">
+                <img class="mr-3 mt-5 ml-4" src="img/group9.png" alt="">
+            </div>
+            <div class="container-cimaAzulEVerde col row">
+                <div><img src="img/group21.png" alt=""></div>
+                <div class="containerSaldoGastos col col-3 bg-white">
+                    <div class="saldo">
+                        <h6 class="fs-6">Saldo</h6>
+                        <p class="h2 textgreen">202000.00</p>
+                        <p class="h2 textgreen">BRL</p>
+                    </div>
+                    <div>
+                        <h6 class="fs-6">Gastos</h6>
+                        <p class="h2 textgreen">450 BRL</p>
+                        <p class="h2 textgreen">na média</p>
+                    </div>
+                </div>
+                <div class="container-DataHora col col-4 bg-light">
+                    <div class="containerData d-flex flex-row mt-4">
+                        <img class="icon ml-1 mr-3 mt-2" src="img/icon07.png" alt="">
+                        <div class="data">
+                            <h6 class="fs-6">Data:</h6>
+                            <p class="fs-6">23 de agosto de 2022</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <img class="icon ml-1 mr-3 mt-2"src="img/icon07.png" alt="">
+                        <div>
+                            <h6 class="fs-6">Hora:</h6>
+                            <p class="fs-6">15:31</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="containerPerfil col col-5 bg-white">
+                <div class="perfil col row ">
+                    <h2 class="col h1 mt-3">Jhon Doe</h2>
+                    <img class="col mt-3" src="img/group13.png" alt="">
+                </div>
+                <div class="row">
+                    <button type="button" class="btn row">
+                        <img  class="col icon imagem-perfil"src="img/icon06.png" alt="">
+                        <p class="col">Profile Settings</p></button>
+                    </button>
+                    <button type="button row" class="btn btn-dark bg-info">
+                        <p>Logout</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main class="row mt-4">
+        <section class="menu col-2">
+            <div class="visaoGeral"><p class="text-light">Visão Geral</p></div>
+            <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  <span class="fs-4 text-light">Visão Geral</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="bg-light.bg-gradient" >
+                    <a href="#" class="nav-link active" aria-current="page">
+                        <img src="img/icon01.png" width="16" height="16" alt=""> 
+                        Conta
+                    </a>
+                  </li>
+                  <li class="bg-opacity-10 bg-secondary.bg-gradient">
+                    <a href="#" class="nav-link">
+                    <img src="img/icon02.png" width="16" height="16" alt=""> 
+                    Emprestimo
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#" class="nav-link link-dark bg-light.bg-gradient">
+                        <img src="img/icon03.png" width="16" height="16" alt=""> 
+                        Detalhes
+                    </a>
+                  </li>
+                  <li class="bg-opacity-10 bg-secondary.bg-gradient">
+                    <a href="#" class="nav-link link-dark">
+                        <img src="img/icon04.png" width="16" height="16" alt=""> 
+                        Pagamentos
+                    </a>
+                  </li>
+                  <li class="bg-light.bg-gradient">
+                    <a href="#" class="nav-link link-dark">
+                        <img src="img/icon05.png" width="16" height="16" alt=""> 
+                        Transferencias
+                    </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#" class="nav-link link-dark bg-secondary.bg-gradient">
+                        <img src="img/icon06.png" width="16" height="16" alt=""> 
+                        Account Settings
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+              </div>
+            <button class="mt-5 ml-4" type="button"><img src="img/group1.png" alt=""></button>
+        </section>
+        <section class="seuCartao col bg-light">
+            <div class="cartao">
+                <h2 class="fw-bolder ">Seu Cartão</h2>
+            </div>
+            <div class="cc text-center text-center h-75 ml-5 ">
+                <h2>Jhon Doe</h2>
+                <p>R$20,200.00</p>
+            </div>
+            <div>
+                <h2>Transações Recentes</h2>
+                <div>
+                    <p>Tr x</p>
+                    <p>Enviou</p>
+                </div>
+                <div>
+                    <p>Tr X2</p>
+                    <p>Recebeu</p>
+                </div>
+            </div>
+        </section>
+        <section class="ladoDireito col-2 bg-light">
+            <div class="mr-1">
+                <h2>Despesas</h2>
+                <p>Diarias: R$12,00</p>
+                <p>Semanal R$ 100,00</p>
+                <p>Mensal R$450,00</p>
+            </div>
+            <div class="mt-1 ml-1">
+                <h3 class="textgreen">Go Green</h3>
+                <p class="textgreen">Inscreva-se</p>
+                <p class="textgreen">Mobilize-se</p>
+                <img src="img/group20.png" alt="">
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

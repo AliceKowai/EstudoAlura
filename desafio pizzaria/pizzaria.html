@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <script> //Para Pizza
+        function pedirPizza(){
+            var preco = [15,20, 25]
+            var pizza = parseInt(prompt("Digite o numero do seu pedido:\n 0- Calabresa\n 1- Quatro Queijos\n 2- Portugues\n 3- Frango com Catupiry\n 4- Queijo com Goiabada"));
+            for(var i=0; i< 6 ; i++){
+                if(pizza == i){
+                    var tamanho = parseInt(prompt("Qual tamanho você deseja?\n 0- Pequana - R$15,00\n 1- Média - R$20,00\n 2-Grande - R$25,00"));
+                    var quantidade = parseInt(prompt("Quantas você gostaria?"))
+                    window.totalPizza = (preco[tamanho]*quantidade);
+                }
+            }
+        }//Bebidas
+        function pedirBebidas(){
+            var preco = [7, 4, 9]
+            var bebida = parseInt(prompt("Digite o numero do seu pedido:\n 0- Refrigerante - R$7,00\n 1- Suco - R$4,00\n 2- energetico - R$9,00"));
+            for(var i=0; i< 4 ; i++){
+                if(bebida == i){
+                    var quantidade = parseInt(prompt("Quantas você gostaria?"))
+                    window.totalBebida = (preco[bebida]*quantidade);
+                }
+            }
+        } //sobremessas
+        function pedirSobremessa(){
+            var preco = [4,3, 3 , 4, 5]
+            var sobremesa = parseInt(prompt("Digite o numero do seu pedido:\n 0- Bolo de Chocolate R$4,00\n 1- Doce de Leite- R$3,00\n 2- Sorvete de Morango - R$3,00\n 3- Mousse de Maracuja - R$4,00\n 4- Torta de Pessego - R$5,00"));
+            for(var i=0; i< 6 ; i++){
+                if(sobremesa == i){
+                    console.log(sobremesa)
+                    var quantidade = parseInt(prompt("Quantas você gostaria?"))
+                    window.totalSobremessa = (preco[i]*quantidade);  
+                }
+            }
+        }
+        pedirPizza();
+        alert(totalPizza)
+        pedirBebidas();
+        alert(totalBebida)
+        pedirSobremessa();
+        alert(totalSobremessa)
+        var total = totalPizza + totalBebida + totalSobremessa;
+        alert("Total: R$" + total);
+    </script>
+</body>
+</html>
+
+
+
+
+
+<script>
+    function aaaaaaaaaa(a,b,c) {
+        
+    }
+    aaaaaaaaaa(a,b,c);
+</script>

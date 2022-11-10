@@ -1,0 +1,79 @@
+.servicos.section{
+    
+}
+
+.logo{
+    margin: auto 0;
+    background-color: aqua;
+    text-align: center;
+}
+
+.container1 > .linha > .coluna > .linha-coluna{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.container1 > .linha > .coluna > .linha-coluna > img{
+    order: 1;
+    margin-right: 10px;
+}
+
+.container1 > .linha > .coluna > .linha-coluna > h4{
+    
+    order: 2;
+}
+
+.container1 > .linha > .coluna > .linha-coluna > p{
+    order: 3;
+    display: block;
+}
+
+.container1{
+    border: 2px solid rgb(255, 153, 0);
+    
+    
+}
+ .container2{
+    border: 2px solid rgb(202, 19, 248); 
+ }
+.container2 > .linha{
+    border: 2px solid rgb(0, 255, 21); 
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+
+.container2 > .linha > .coluna > .linha-coluna{
+    border: 2px solid rgb(0, 183, 255);
+    display: grid;
+    height: 200px;
+    width: 333px;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 25% 50% 25%;
+    flex: 1;
+    gap: 3px;
+}
+
+.container2 > .linha > .coluna > .linha-coluna > .icone{
+    grid-row: 1/1;
+    grid-column: 1/2;
+}
+.container2 > .linha > .coluna > .linha-coluna > h4{
+    grid-row: 1/1;
+    grid-column: 2/2;
+    align-self: center;
+}
+
+.container2 > .linha > .coluna > .linha-coluna > p{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    padding: 2px;
+}
+
+.container2 > .linha > .coluna > .linha-coluna > .texto-do-botao{
+    grid-row-start: 3;
+    grid-column: 2/3;
+    margin: 0 auto;
+}

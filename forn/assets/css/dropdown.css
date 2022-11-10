@@ -1,0 +1,20 @@
+.dropdown > ul > li:not(:hover) > ul {
+    display: none;
+}
+.dropdown > ul > li > ul {
+    position: absolute;
+    border: 3px solid gray;
+    background: white;
+    z-index: 1;
+    left: -3px;
+}
+.dropdown > ul > li {
+    position: relative;
+    /* width: fit-content; */
+    border: 3px solid gray;
+    display: inline;
+}
+.dropdown ul {
+    margin: 0;
+    padding-left: 1.5em;
+}

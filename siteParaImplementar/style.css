@@ -1,0 +1,58 @@
+/*gerais*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+}
+
+
+/*medias quares*/
+
+@media only screen and (max-width: 600px) {
+    .cabecalho{
+        height: auto;
+    }
+    .menu__lista{
+        flex-direction: column;
+    }
+
+    .menu__item{
+        border-bottom: 1px gray solid;
+    }
+
+    .imagem img{
+        display: none;
+    }
+
+    .ConteudoPrincipal, .contato{
+        width: 100%;
+    }
+
+    .titulo{
+        margin-top: 10px;
+    }
+    .container-design{
+        justify-content: center;
+    }
+
+    .contato form{
+        display: block;
+    }
+
+    .contato form input, .contato form textarea{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .menu__item{
+        margin: auto;
+        border: 1px solid red;
+    }
+  }

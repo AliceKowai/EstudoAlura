@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="assets/css/passos.css">
+    <title>Ninna-Login - Cadastro</title>
+  </head>
+  <body class="body-form">
+    <section class="form my-4 ">
+        <div class="container"> 
+            <div class="row no-gutters container-login">
+                <div class="col px-5 pt-5">
+                    <h1 class="font-weight-bold py-4 text-center p-3 bt-1">Ninna Jobs</h1>
+                    <div class="form mx-4">
+                        <form class="row needs-validation" method="post" action="" novalidate>
+                            <div class="step" id="step_1">
+                                <div>
+                                    <div class="containerprogresses d-flex justify-content-center align-items-center p-3">
+                                        <div class="progresses">
+                                            <div class="steps colorir">
+                                                <span><i class="fa fa-check">1</i></span>
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="steps">
+                                                <span><i class="fa fa-check">2</i></span>
+                                            </div>
+                                            <span class="line"></span>
+                                    
+                                            <div class="steps">
+                                                <span class="font-weight-bold">3</span>
+                                            </div>
+                                            <span class="line"></span>
+                            
+                                            <div class="steps">
+                                                <span class="font-weight-bold">4</span>
+                                            </div>
+                                            <span class="line"></span>
+                            
+                                            <div class="steps">
+                                                <span class="font-weight-bold">5</span>
+                                            </div> 
+                                            <span class="line"></span>
+                            
+                                            <div class="steps">
+                                                <span class="font-weight-bold">6</span>
+                                            </div>        
+                                        </div> 
+                                    </div>
+                                    <h2 class="p-3">Informações iniciais</h2>
+                                    <div class="col-md-12 mb-3">
+                                        <label for="curriculo" class="form-label">Seu curriculo em pdf</label>
+                                        <input type="file" class="form-control" aria-label="curriculo" required>
+                                        <div class="invalid-feedback">Somente pdf</div>
+                                    </div>
+                                    <div class="tipoDeContrato py-2">
+                                        <p class="text-sm-start">O tipo de contrato que está disposto a aceitar.</p>
+                                            <div class="row">
+                                                <div class="form-check input-group col">
+                                                    <input class="form-check-input bg-light" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label mx-2" for="flexCheckDefault">Estágio</label>
+                                                </div>
+                                                <div class="form-check input-group col">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label mx-2 bg-light" for="flexCheckChecked">PJ</label>
+                                                </div>
+                                                <div class="form-check input-group col">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label mx-2 bg-light" for="flexCheckDefault">CLT</label>
+                                                </div>
+                                                <div class="form-check input-group col">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label mx-2 bg-light" for="flexCheckChecked">Flex</label>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label  for="salario" class="form-label">Salario pretendido</label>
+                                            <input  type="text" class="form-control bg-light"id="salario"placeholder="R$ 0,00" id="salario" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="areadeatuacao" class="form-label">Area de atuação</label>
+                                            <select class="form-control" id="areadeatuacao" name="areadeatuacao" required>
+                                                <option value=""></option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step" id="step_2">
+                                <div class="containerprogresses d-flex justify-content-center align-items-center">
+                                    <div class="progresses">
+                                        <div class="steps colorir">
+                                            <span><i class="fa fa-check">1</i></span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                                        <div class="steps colorir">
+                                            <span><i class="fa fa-check">2</i></span>
+                                        </div>
+                                        <span class="line"></span>
+                                
+                                        <div class="steps">
+                                            <span><i class="font-weight-bold">3</i></span>
+                                        </div>
+                                        <span class="line"></span>
+                        
+                                        <div class="steps">
+                                            <span><i class="font-weight-bold">4</i></span>
+                                        </div>
+                                        <span class="line"></span>
+                        
+                                        <div class="steps">
+                                            <span><i class="font-weight-bold">5</i></span>
+                                        </div>  
+                                        <span class="line"></span>
+                        
+                                        <div class="steps">
+                                            <span class="font-weight-bold">6</span>
+                                        </div>       
+                                    </div> 
+                                </div>
+                                <h2 class="p-3"> Dados Pessoais</h2>
+                                <div class="col-md-12">
+                                    <label for="imgperfil" class="form-label">Imagem de perfil</label>
+                                    <input type="file" class="form-control" aria-label="imgperfil" required>
+                                    <div class="invalid-feedback">Por favor preencha este campo</div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-8">
+                                        <label for="nome" class="form-label">Nome Completo</label>
+                                        <input type="text" class="form-control" id="nome" value="nome" required>
+                                        <div class="valid-feedback">
+                                            Tudo ok!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="cpf" class="form-label">CPF</label>
+                                        <input type="text" class="form-control" id="cpf" value="cpf" required>
+                                        <div class="valid-feedback">
+                                            Tudo ok!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4">
+                                        <label for="data">Data de nascimento</label>
+                                        <input type="date" class="form-control" id="data" name="Data" required>
+                                        <div class="valid-feedback">
+                                            Tudo ok!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="genero">Genêro</label>
+                                        <select class="form-control" id="genero" name="genero" required>
+                                            <option value=""></option>
+                                            <option value="feminino">Feminino</option>
+                                            <option value="masculino">Masculino</option>
+                                            <option value="prefiroNaoInformar">Prefiro não Informar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-6">
+                                        <label for="cidade" class="form-label">Cidade</label>
+                                        <input type="text" class="form-control" id="cidade" required>
+                                        <div class="invalid-feedback">
+                                            Informe sua cidade e estado.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="estado" class="form-label">Estado</label>
+                                        <select class="form-select" id="estado" required>
+                                            <option selected disabled value="">Escolha...</option>
+                                            <option>...</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                             Por favor, escolha um estado valido
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-8">
+                                        <label for="telefone" class="form-label">Telefone</label>
+                                        <input type="number" class="form-control" id="telefone" name="telefone" placeholder="(00) 0 0000-0000" required>
+                                        <div class="invalid-feedback">
+                                            Informe um telefone valido.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="cep" class="form-label">Cep</label>
+                                        <input type="text" class="form-control" id="cep" required>
+                                        <div class="invalid-feedback">
+                                            Por favor, informe um cep valido.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea">Fale um pouco sobre você.</label>
+                                </div>
+                            </div>
+                            <div class="step" id="step_3">
+                                <div class="containerprogresses d-flex justify-content-center align-items-center">
+                                    <div class="progresses">
+                                        <div class="steps colorir">
+                                            <span><i class="fa fa-check">1</i></span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                                        <div class="steps colorir">
+                                            <span><i class="fa fa-check">2</i></span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                                
+                                        <div class="steps colorir">
+                                            <span class="font-weight-bold">3</span>
+                                        </div>
+                                        <span class="line"></span>
+                        
+                                        <div class="steps">
+                                            <span class="font-weight-bold">4</span>
+                                        </div>
+                                        <span class="line"></span>
+                        
+                                        <div class="steps">
+                                            <span class="font-weight-bold">5</span>
+                                        </div>   
+                                        <span class="line"></span>
+                        
+                                        <div class="steps">
+                                            <span class="font-weight-bold">6</span>
+                                        </div>      
+                                    </div> 
+                                </div>
+                                <h2 class="py-3">Formação Academica</h2>
+                                <div class="row py-3">
+                                   <div class="formacao">
+
+                                   </div>
+                                    <div class="py-4">
+                                        <button type="button" class="btn btn-primary m-2 col"id="adicionarformacao"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                          </svg> Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step" id="step_4">
+                                <div class="containerprogresses d-flex justify-content-center align-items-center">
+                                    <div class="progresses">
+                                        <div class="steps colorir">
+                                            <span><i class="fa fa-check">1</i></span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                                        <div class="steps colorir">
+                                            <span><i class="fa fa-check">2</i></span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                                
+                                        <div class="steps colorir">
+                                            <span class="font-weight-bold">3</span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                        
+                                        <div class="steps colorir">
+                                            <span class="font-weight-bold">4</span>
+                                        </div>
+                                        <span class="line"></span>
+                        
+                                        <div class="steps">
+                                            <span class="font-weight-bold">5</span>
+                                        </div>    
+                                        <span class="line"></span>
+                        
+                                        <div class="steps">
+                                            <span class="font-weight-bold">6</span>
+                                        </div>     
+                                    </div> 
+                                </div>
+                                <h2>Certificados e conquistas</h2>
+                                <p for="certificados" class="form-label">Você pode informar sobre cursos, trabalho voluntário e outros reconhecimentos</p>
+                                <div class="certificados"></div>
+                                <div>
+                                    <button type="button" class="btn btn-primary m-2 col" id="adicionarcertificados"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                      </svg> Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="step" id="step_5">
+                                <div class="containerprogresses d-flex justify-content-center align-items-center">
+                                    <div class="progresses">
+                                        <div class="steps colorir">
+                                            <span><i class="fa fa-check">1</i></span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                                        <div class="steps colorir">
+                                            <span><i class="fa fa-check">2</i></span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                                
+                                        <div class="steps colorir">
+                                            <span class="font-weight-bold">3</span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                        
+                                        <div class="steps colorir">
+                                            <span class="font-weight-bold">4</span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                        
+                                        <div class="steps colorir">
+                                            <span class="font-weight-bold">5</span>
+                                        </div>  ]
+                                        <span class="line"></span>
+                        
+                                        <div class="steps">
+                                            <span class="font-weight-bold">6</span>
+                                        </div>      
+                                    </div> 
+                                </div>
+                                <h2 class="p-3">Experiência Profissional</h2>
+                                <div class="py-2">
+                                    <div class="experienciaProfissional" id="exluirXp"></div>
+                                    <button type="button" id="adicionar" class="btn btn-primary m-2 col"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                      </svg> Adicionar
+                                    </button>
+                                </div>   
+                            </div>
+                            <div class="step" id="step_6">
+                                <h2 class="py-3">Idiomas</h2>
+                                <p for="idiomas" class="form-label">Adicione os idiomas que mais domina</p>
+                                <div class="idioma">
+
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary m-2 col" id="adicionarIdioma"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                      </svg> Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="step" id="step_7">
+                                <div class="containerprogresses d-flex justify-content-center align-items-center">
+                                    <div class="progresses">
+                                        <div class="steps colorir">
+                                            <span><i class="fa fa-check">1</i></span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                                        <div class="steps colorir">
+                                            <span><i class="fa fa-check">2</i></span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                                
+                                        <div class="steps colorir">
+                                            <span class="font-weight-bold">3</span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                        
+                                        <div class="steps colorir">
+                                            <span class="font-weight-bold">4</span>
+                                        </div>
+                                        <span class="line colorir"></span>
+                        
+                                        <div class="steps colorir">
+                                            <span class="font-weight-bold">5</span>
+                                        </div> 
+                                        <span class="line colorir"></span>
+                        
+                                        <div class="steps colorir">
+                                            <span class="font-weight-bold">6</span>
+                                        </div> 
+                                        
+                                    </div> 
+                                </div>
+                                <h2 class="p-3">Informações da conta</h2>
+                                <div class="">
+                                    <label for="email" class="form-label">Endereço de e-mail</label>
+                                    <input type="email" class="form-control" id="email" placeholder="exemplo@dominio.com" required>
+                                    <div class="valid-feedback">
+                                        Tudo ok!
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <label for="email" class="form-label">confirmar endereço de e-email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="exemplo@dominio.com" required>
+                                    <div class="valid-feedback">
+                                        Tudo ok!
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <label for="senha" class="form-label">Esolha uma senha</label>
+                                    <input type="password" class="form-control" id="email" placeholder="" required>
+                                    <div class="valid-feedback">
+                                        Tudo ok!
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <label for="senha" class="form-label">Digite novamente a senha</label>
+                                    <input type="password" class="form-control" id="email" placeholder="" required>
+                                    <div class="valid-feedback">
+                                        Tudo ok!
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Eu aceito os termos e condições</label>
+                                        <div class="invalid-feedback">
+                                            Você deve aceitar para continuar
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="py-4">
+                                    <button class="btn btn-primary" type="submit">Enviar</button>
+                                </div> 
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+                <div class="d-flex justify-content-between p-5">
+                    <div>
+                        <button class="btn tn-block btn-secondary" id="prev">Anterior</button>
+                    </div>
+                    <div>
+                        <button class="btn tn-block btn-secondary" id="next">Próximo</button>
+                    </div>
+                </div>       
+            </div>
+            
+        </div>
+    </section>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script>
+        $(document).ready(function () { 
+            var $seuCampoCpf = $("#pdf");
+            $seuCampoCpf.mask('000.000.000-00', {reverse: true});
+        });
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+<input type="text" id="CPF" name="CPF" />
+    <!--Adicionar experiencia profissional-->
+    <script>
+        $( "#adicionar").click(function(){
+            $( ".experienciaProfissional" ).append('\
+                <div id="xpProfissional" class="row py-2">\
+                    <div class="text-center excluir">\
+                        <button type="button" id="excluirXP" class="btn btn-primary float-end" onclick="$(this).parent().parent().remove()">\
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">\
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />\
+                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />\
+                            </svg>\
+                            Excluir\
+                        </button>\
+                    </div>\
+                    <div class="col-md-6 py-2">\
+                        <label for="empresa" class="form-label">Empresa</label><input type="text" class="form-control" id="empresa" required />\
+                        <div class="valid-feedback">Tudo ok!</div>\
+                    </div>\
+                    <div class="col-md-6 py-2">\
+                        <label for="cargo" class="form-label">Cargo</label><input type="text" class="form-control" id="cargo" required />\
+                        <div class="valid-feedback">Tudo ok!</div>\
+                    </div>\
+                    <div>\
+                        <div class="form-floating py-2"><textarea class="form-control" placeholder="Fale um pouco sobre" id="floatingTextarea" style="height: 100px;"></textarea><label for="floatingTextarea">Fale um pouco sobre.</label></div>\
+                    </div>\
+                    <div\z class="row py-2">\
+                        <div class="col-md-3">\
+                            <label for="entrada" class="form-label">Data de inicio</label>\
+                            <select class="form-select" id="entrada" required>\
+                                <option selected disabled value="">Mês</option>\
+                                <option value="janeiro">Janeiro</option>\
+                                <option value="fevereiro">Fevereiro</option>\
+                                <option value="marco">Março</option>\
+                            </select>\
+                        </div>\
+                        <div class="col-md-3 py-2">\
+                            <label for="entrada" class="form-label"></label>\
+                            <select class="form-select" id="entrada" required>\
+                                <option selected disabled value="">Ano</option>\
+                                <option value="2022">2022</option>\
+                                <option value="2021">2021</option>\
+                                <option value="2020">2020</option>\
+                            </select>\
+                        </div>\
+                        <div class="col-md-3">\
+                            <label for="messaida" class="form-label">Saida</label>\
+                            <select class="form-select" id="mesconclusao" required>\
+                                <option selected disabled value="">Mês</option>\
+                                <option value="janeiro">Janeiro</option>\
+                                <option value="fevereiro">Fevereiro</option>\
+                                <option value="marco">Março</option>\
+                            </select>\
+                        </div>\
+                        <div class="col-md-3 py-2">\
+                            <label for="saida" class="form-label"></label>\
+                            <select class="form-select" id="saida" required>\
+                                <option selected disabled value="">Ano</option>\
+                                <option value="2022">2022</option>\
+                                <option value="2021">2021</option>\
+                                <option value="2020">2020</option>\
+                            </select>\
+                        </div>\
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="" /><label class="form-check-label" for="invalidCheck">É meu emprego atual</label></div>\
+                    </div>\
+                </div>\
+            ')
+        })
+    </script>
+    <!-- Adicionar certificados-->
+     <script>
+        $( "#adicionarcertificados").click(function(){
+            $( ".certificados" ).append('\
+                <div class="row">\
+                    <div>\
+                        <button type="button" class="btn btn-primary float-end" onclick="$(this).parent().parent().remove()">\
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">\
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>\
+                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>\
+                            </svg> Excluir\
+                        </button>\
+                    </div>\
+                    <div class="col-md-6 py-2">\
+                        <label for="certificadotitulo" class="form-label">Titulo</label>\
+                        <input type="text" class="form-control" id="certificadotitulo" required>\
+                        <div class="invalid-feedback">\
+                            Por favor, informe o titulo.\
+                        </div>\
+                    </div>\
+                    <div class="col-md-6 py-2">\
+                        <label for="certificadotipo" class="form-label">Tipo</label>\
+                        <select class="form-select" id="certificadotipo" required>\
+                            <option selected disabled value="">Escolha</option>\
+                            <option value="curso">Curso</option>\
+                            <option value="reconhecimento">Reconhecimento</option>\
+                            <option value="TV">Trabalho Voluntário</option>\
+                        </select>\
+                    </div>\
+                    <div class="form-floating py-2">\
+                        <textarea class="form-control" placeholder="Fale um pouco sobre" id="floatingTextarea" style="height: 100px"></textarea>\
+                        <label for="floatingTextarea">Fale um pouco sobre.</label>\
+                    </div>\
+                </div>\
+            ');
+        });
+    </script>
+    <!--Adicionar formação-->
+    <script>
+        
+        $( "#adicionarformacao").click(function(){
+            $( ".formacao" ).append(' <div class="text-center">\
+                                        <button type="button" class="btn btn-primary float-end" onclick="$(this).parent().parent().remove()">\
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">\
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>\
+                                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>\
+                                            </svg> Excluir\
+                                        </button>\
+                                    </div>\
+                                    <div class="row">\
+                                        <div class="col-md-8 py-2">\
+                                        <label for="instituicao" class="form-label">Instituição</label>\
+                                        <input type="text" class="form-control" id="instituicao" value="instituicao" required>\
+                                        <div class="valid-feedback">\
+                                            Tudo ok!\
+                                        </div>\
+                                    </div>\
+                                    <div class="col-md-4 py-2">\
+                                        <label for="nivelformacao" class="form-label">Formação</label>\
+                                        <select class="form-select" id="nivelformacao" required>\
+                                            <option selected disabled value="">Escolha...</option>\
+                                            <option value="EF">Ensino Fundamental</option>\
+                                            <option value="EM">Ensino Médio</option>\
+                                            <option value="tecnico">Técnico</option>\
+                                            <option value="tecnologo">tecnólogo</option>\
+                                            <option value="bacharel">Bacharel</option>\
+                                            <option value="licenciatura">Licenciatura</option>\
+                                            <option value="posGraduacao">Pós-graduação</option>\
+                                            <option value="mestrado">Mestrado</option>\
+                                            <option value="doutorado">Doutorado</option>\
+                                            <option value="posDoutorado">Pós-doutorado</option>\
+                                        </select>\
+                                        <div class="invalid-feedback">\
+                                             Por favor, escolha uma opção valida\
+                                        </div>\
+                                    </div>  \
+                                        </div>\
+                                </div>\
+                                <div class="py-2">\
+                                    <label for="curso" class="form-label">Curso</label>\
+                                    <input type="text" class="form-control" id="curso" required>\
+                                    <div class="invalid-feedback">\
+                                        Por favor, informe um curso.\
+                                    </div>\
+                                </div>\
+                                <div class="row py-2">\
+                                    <div class="col-md-3">\
+                                        <label for="mesInicio" class="form-label">Inicio</label>\
+                                        <select class="form-select" id="mesInicio" required>\
+                                            <option selected disabled value="">Mês</option>\
+                                            <option value="janeiro">Janeiro</option>\
+                                            <option value="fevereiro">Fevereiro</option>\
+                                            <option value="marco">Março</option>\
+                                        </select>\
+                                    </div>  \
+                                    <div class="col-md-3 py-2">\
+                                        <label for="anoInicio" class="form-label"></label>\
+                                        <select class="form-select" id="anoInicio" required>\
+                                            <option selected disabled value="">ano</option>\
+                                            <option value="2022">2022</option>\
+                                            <option value="2021">2021</option>\
+                                            <option value="2020">2020</option>\
+                                        </select>\
+                                    </div> \
+                                    <div class="col-md-3">\
+                                        <label for="mesconclusao" class="form-label">Conclusão/Previsão</label>\
+                                        <select class="form-select" id="mesconclusao" required>\
+                                            <option selected disabled value="">Mês</option>\
+                                            <option value="janeiro">Janeiro</option>\
+                                            <option value="fevereiro">Fevereiro</option>\
+                                            <option value="marco">Março</option>\
+                                        </select>\
+                                    </div> \
+                                    <div class="col-md-3 py-2">\
+                                        <label for="anoconclusao" class="form-label"></label>\
+                                        <select class="form-select" id="anoconclusao" required>\
+                                            <option selected disabled value="">Ano</option>\
+                                            <option value="2022">2022</option>\
+                                            <option value="2021">2021</option>\
+                                            <option value="2020">2020</option>\
+                                        </select>\
+                                    </div> ')})
+    </script>
+    <!--Adicionar Idioma-->
+    <script>
+        $( "#adicionarIdioma").click(function(){
+            $( ".idioma" ).append('<div class="text-center">\
+                                        <button type="button" class="btn btn-primary float-end" onclick="$(this).parent().parent().remove()">\
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">\
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>\
+                                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>\
+                                            </svg> Excluir\
+                                        </button>\
+                                    </div>\
+                                    <div class="row">\
+                                        <div class="col-md-8 py-2">\
+                                        <label for="idioma" class="form-label">Idioma</label>\
+                                        <input type="text" class="form-control" id="idioma" value="idioma" required>\
+                                        <div class="valid-feedback">\
+                                            Tudo ok!\
+                                        </div>\
+                                    </div>\
+                                    <div class="col-md-4 py-2">\
+                                        <label for="nivelDeConhecimento" class="form-label">Nivel</label>\
+                                        <select class="form-select" id="nivelConhecimento" required>\
+                                            <option selected disabled value="">Escolha...</option>\
+                                            <option value="basico">Básico</option>\
+                                            <option value="intermediario">Intermediário</option>\
+                                            <option value="avancado">avançado</option>\
+                                            <option value="nativoFluente">Nativo/Fluente</option>\
+                                        </select>\
+                                        <div class="invalid-feedback">\
+                                             Por favor, escolha uma opção valida\
+                                        </div>\
+                                    </div>  \
+                                        </div>\
+                                        ')})         
+    </script>
+    <!--Validação-->
+    <script>
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+        }, false)
+        })
+    </script>
+    <!--mascaras-->
+    <script>
+        $(document).ready(function () { 
+            var $seuCampoCpf = $("#CPF");
+            $seuCampoCpf.mask('000.000.000-00', {reverse: true});
+        });
+    </script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script src="assets/js/passos.js"></script>
+</html>

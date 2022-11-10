@@ -1,0 +1,74 @@
+
+/* contato*/
+
+.contato{
+    background-color: white;
+    margin-top: 30px;
+}
+
+.contato img{
+    width: 100%;
+}
+
+.contato h3{
+    margin: 40px 0 20px 35px;
+}
+
+.contato form{
+    margin: auto;
+    height: 82vh;
+    width: 90%;
+    display: grid;
+    gap: 7px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 10% 40% 40%;
+}
+
+.contato form input{
+    height: 30px;
+    outline: solid rgb(197, 197, 197) 0.2px;
+    border: 1px solid rgb(235, 233, 233);
+}
+
+.contato > form> input::placeholder, .contato > form> textarea::placeholder{
+    color: rgb(197, 197, 197);
+    padding: 5px;
+    font-size: 17px;
+}
+
+.msg{
+    border: 3px solid rgb(235, 233, 233);
+}
+
+.nome{
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+.email{
+    grid-column: 2/3;
+    grid-row: 1/1;
+}
+.titulo-contato{
+    grid-column: 1/3;
+    grid-row: 2/2;
+}
+
+.msg{
+    grid-column: 1/3;
+    grid-row: 3/3;
+}
+
+#enviar{
+    grid-column: 2/3;
+    grid-row: 4/4;
+    width: 175px;
+    height: 70px;
+    margin: 20px 0px 0px 155px;
+    background-color: white;
+    font-size: 25px;
+    color: rgb(138, 138, 138);
+}
+
+#enviar:hover{
+    cursor: pointer;
+}

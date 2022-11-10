@@ -1,0 +1,16 @@
+.salgados-item{
+    width: 20%;
+    color: rgb(10, 10, 10);
+    padding: 1.2rem;
+    position: relative;
+    border: 1px solid black;
+    margin: 1.2rem;
+    background: aliceblue;
+
+}
+
+.salgados-item:hover{
+    width: 23%;
+    border-color:#f0b6ce;
+    box-shadow: 10px 5px 5px rgb(161, 160, 160);
+}

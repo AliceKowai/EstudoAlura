@@ -1,0 +1,192 @@
+:root {
+    --border-color: #c9cbcb;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 12px;
+}
+main {
+    margin-top: 2em;
+}
+.container :is(.sidebar, .content) {
+    background: #eff4f5;
+    padding: 1em 1.5em;
+    direction: ltr;
+}
+.container .right-column {
+    width: 100%;
+}
+.container .content {
+    position: relative;
+    width: 100%;
+    padding-top: 4.3em;
+    padding-bottom: 0;
+}
+.left-column {
+    width: 27%;
+}
+.page-header {
+    background: #dae0e38a;
+    padding: 7px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.page-header h1 {
+    line-height: 1;
+    font-size: 24px;
+    background: #7eb627;
+    width: max-content;
+    padding: .3em .7em .3em .5em;
+    border-radius: 0 15px 15px 0;
+    margin: 0;
+    transform: translateX(-7px);
+    color: white;
+}
+
+.sidebar-menu {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    margin: 0;
+}
+body {
+    background-color: #fcfdfd;
+}
+
+.avatar {
+    display: block;
+    height: 150px;
+    width: 150px;
+    border: 2px solid #d0dade;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lista-de-vagas li {
+    list-style: none;
+}
+.navbar {
+    background-color: #0e0062;
+}
+.navbar-brand {
+    position: relative;
+}
+.navbar-brand img {
+    position: absolute;
+    right: 0;
+    height: 75px;
+    top: -23px;
+}
+.vagas {
+    display: flex;
+    gap: 10px;
+}
+.lista-de-vagas {
+    width: 100%;
+    height: 100%;
+}
+.lista-de-vagas ul {
+    padding: 0;
+}
+.lista-de-vagas ul li {
+    min-height: 40px;
+    padding: .7em 0;
+}
+.lista-de-vagas li:hover {
+    background: #e4e9eb;
+    cursor: pointer;
+}
+.lista-de-vagas li.active {
+    border: 2px solid #4774c7 !important;
+}
+.lista-de-vagas ul li:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+.informacoes-da-vaga {
+    border-left: 1px solid var(--border-color);
+    padding-left: 10px;
+    flex-basis: 140%;
+    align-self: flex-start;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.informacoes-da-vaga h3 {
+    font-size: 1.55rem;
+    margin-top: .7em;
+}
+.lista-de-vagas h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.lista-de-vagas p {
+    margin-bottom: .3em;
+}
+.lista-de-vagas p:last-child {
+    margin-bottom: 0;
+}
+.vaga-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.vaga-wrapper img {
+    height: 70px;
+}
+.sidebar .btn {
+    width: 100%;
+}
+.informacao-de-inscricao {
+    display: inline-block;
+    background: gray;
+    color: white;
+    padding: .05em .3em;
+    text-transform: lowercase;
+}
+.info:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    background: currentColor;
+    opacity: .5;
+    height: 1em;
+    width: 1px;
+    margin-left: 7px;
+    margin-right: 7px;
+    vertical-align: middle;
+    transform: translateY(-10%);
+}
+.informacoes-logo {
+    float: right;
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.filtros form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75em;
+    margin-bottom: 8px;
+}
+.filtros form select {
+    flex-grow: 1;
+    padding: .4em;
+    background: transparent;
+    border: 0;
+    border-bottoM: 1px solid var(--border-color);
+}
+
+
+.btn-primary {
+    --bs-btn-bg: #1e0c85;
+    --bs-btn-border: var(--bs-btn-bg);
+}

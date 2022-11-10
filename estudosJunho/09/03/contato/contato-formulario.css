@@ -1,0 +1,11 @@
+.contato__formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+
+.contato__formulario label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(112, 113, 114);
+}

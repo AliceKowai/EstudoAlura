@@ -1,0 +1,8 @@
+.cabecalho{
+    background: rgb(250, 216, 222);
+    align-items: center; /*alinhar itens sentido cima e baixo*/
+    display: flex; /* deixar os itens lado a lado*/
+    justify-content: space-between; /*um item fica na esquerda e outro na direita/ nesse caso logo e menu*/
+    padding-left: 2rem; 
+    padding-right: 2rem;
+}

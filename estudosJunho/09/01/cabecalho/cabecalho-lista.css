@@ -1,0 +1,7 @@
+.cabecalho-menu__lista{
+    display: flex;
+    list-style: none; /*tira pontinhos na frente da lista */
+    margin-right: 5rem;
+    
+    
+}

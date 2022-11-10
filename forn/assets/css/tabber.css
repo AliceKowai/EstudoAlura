@@ -1,0 +1,17 @@
+.tabber {
+    width: 100%;
+}
+.tabber__tabs {
+    display: flex;
+}
+.tabber__tab {
+    width: 100%;
+    text-align: center;
+}
+.tabber__tab.active {
+    border-bottom: 3px solid gray;
+    padding-bottom: 2px;
+}
+.tabber__content > :not(.active) {
+    display: none;
+}

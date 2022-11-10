@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4f4f4;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+	position: relative;
+	top: -35px;
+	right: 75px;
+}
+
+.logo img {
+	height: 85px;
+	position: absolute;
+}
+
+.logo-empresa {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #00257A;
+    padding: 0 40px;
+    height: 70px;
+}
+input[type="search"] {
+    width: 400px;
+}
+header {
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    gap: 1em;
+}
+header nav li {
+    list-style: none;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.cabecalho-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    gap: 1rem;
+    margin: 2rem 3rem;
+}
+
+
+.vagas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: .7rem 0;
+}
+
+.vaga {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.vaga .adicionar {
+    font-size: 11em;
+    color: #efefef;
+    background: #d0d0d0;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    align-self: flex-start;
+    padding: .5em 1em;
+    background: #00257A;
+    color: #ffffff;
+    border: 0;
+}
+.informacoes {
+    width: 100%;
+}
+
+.coluna-esquerda, .coluna-direita {
+    background: #ffffff;
+}
+.coluna-esquerda {
+    text-align: center;
+}
+
+.coluna-esquerda li {
+    list-style: none;
+}
+
+.coluna-esquerda a {
+    color: #00257A;
+    font-weight: 700;
+}
+
+footer {
+    background:#00257A;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer p {
+    color: #ffffff;
+    margin-bottom: .7em;
+}
+
+footer img {
+    width: 18px;
+
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.caixa-de-pesquisa form {
+    display: flex;
+}
+
+
+.material-symbols-outlined.avatar {
+    font-size: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin: 10px;
+    user-select: contain;
+}
+
+.material-symbols-outlined.avatar.candidato {
+    color: transparent;
+    background-image: url('../img/erick.jpg');
+    background-size: 70px;
+    background-position: -7px -13px;
+}
+.material-symbols-outlined.avatar.empresa {
+    color: transparent;
+    background-image: url('../img/logoninna.jpg');
+    background-size: cover;
+}
+
+
+.modal-logo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.modal-logo img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}

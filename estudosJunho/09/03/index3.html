@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../01/reset.css">
+    <link rel="stylesheet" href="../01/normalize.css">
+    <link rel="stylesheet" href="../01/cabecalho.css">
+    <link rel="stylesheet" href="../01/cabecalho/cabecalho-imagem.css">
+    <link rel="stylesheet" href="../01/cabecalho/cabecalho-link.css">
+    <link rel="stylesheet" href="../01/cabecalho/cabecalho-lista-item.css">
+    <link rel="stylesheet" href="../01/cabecalho/cabecalho-lista.css">
+    <link rel="stylesheet" href="../01/cabecalho/cabecalho-menu.css">
+    <link rel="stylesheet" href="contato/contato.css">
+    <link rel="stylesheet" href="contato/contato-formulario.css">
+    <link rel="stylesheet" href="contato/contato-divimagem.css">
+    <link rel="stylesheet" href="contato/contato-input.css">
+    <link rel="stylesheet" href="contato/contato-botao.css">
+    <link rel="stylesheet" href="../01/rodape.css">
+    <title>DL-Contato</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__imagem" src="../01/imagens/Logo.jpeg"/>
+        <nav class="cabecalho__menu">
+            <ul class="cabecalho-menu__lista">
+                <li class="cabecalho-lista__item"><a class="lista__link " href="../01/site01.html">Home </a></li>
+                <li class="cabecalho-lista__item"><a class="lista__link" href="../02/index2.html"> Novidades </a></li>
+                <li class="cabecalho-lista__item"><a class="lista__link ativo" href="../03/index3.html">Contato </a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main class="contato">
+        <div class="contato__divFormulario">
+            <form class="contato__formulario">
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome"class="contato__input" required>
+
+                <label for="email"> E-mail</label>
+                <input type="text" id="email"class="contato__input" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone"class="contato__input" required placeholder="(xx) xxxxx-xxxx">
+
+                <label for="mensagem"> Mensagem </label>
+                <textarea cols="70" rows="10" id="mensagem" class="contato__input mensagem"></textarea>
+
+                <input class="contato__botao" type="submit" value="Eviar formulário">
+            </form>
+        </div>
+        <div class="contato__divimagem">
+            <img class="contato__divimagem"src="../01/imagens/minimini.jpeg"/>
+        </div>
+    </main>
+    <footer class="rodape">
+        <h3> Esperimente nossas delicias </h3>
+    </footer>
+</body>
+</html>

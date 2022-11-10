@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.progresses {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 120px;
+    height: 6px;
+    background-color: #d9e6e0;
+}
+
+.steps {
+    display: flex;
+    background-color: #d9e6e0;
+    color: #fff;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.colorir {
+    background-color: #0f9b5a;
+}
+
+.containergeral {
+    height: 800px;
+}

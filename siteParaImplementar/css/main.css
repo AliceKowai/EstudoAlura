@@ -1,0 +1,112 @@
+.ConteudoPrincipal, .contato{
+    width: 55%;
+    margin: auto;
+}
+
+/* Elevante*/
+
+
+.elevante{
+    background-color: white;
+    height: 60vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elevante__texto{
+    border: solid 2px rgb(215, 215, 215);
+    height: 85%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elevante__texto h1{
+    font-size: 55px;
+    text-transform:uppercase;
+    font-weight: lighter;
+    color: rgb(138, 138, 138);
+    padding: 5px;
+    font-stretch: condensed;
+}
+
+.elevante__texto p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.texto{
+    color: rgb(140, 140, 140);
+    line-height: 25px;
+}
+
+/* Textos e imagens*/
+
+.container{
+    display: flex;
+    background-color: white;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    margin: auto;
+    line-height: 25px;
+}
+
+.titulo{
+    color: rgb(140, 140, 140);
+    font-weight: lighter;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.imagem img{
+    height: 100%;
+}
+
+.container-design{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.container-design div{
+    width: 246px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__item img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Nossas ideias*/
+
+.NossasIdeias{
+    height: 260px;
+    background-color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-nossasIdeias{
+    margin-top: 50px;
+}
+
+.NossasIdeias p{
+    margin:  0 40px ;
+}

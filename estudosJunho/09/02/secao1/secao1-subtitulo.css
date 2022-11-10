@@ -1,0 +1,9 @@
+.secao1__subtitulo{
+    color: rgb(88, 88, 88);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: pink;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    
+}

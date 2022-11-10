@@ -1,0 +1,13 @@
+.salgados__subtitulo{
+    color: rgb(88, 88, 88);
+    text-shadow: pink;
+    text-align: center;
+    
+}
+
+.salgados__preco{
+    color: rgb(88, 88, 88);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}

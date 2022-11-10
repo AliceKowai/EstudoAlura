@@ -1,0 +1,14 @@
+.lista__link{
+    color: rgb(80, 81, 82);
+    text-decoration: none; /* tira linha embaixo de texto link*/
+    text-transform: lowercase; /*deixa todas letras minusculas*/
+    text-shadow: 0 3px 3px rgb(252, 160, 204);
+}
+
+.lista__link.ativo{
+    font-weight: bold;
+}
+
+.lista__link:hover{
+    text-decoration: underline;
+}

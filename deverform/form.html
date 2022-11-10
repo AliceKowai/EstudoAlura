@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Conta</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      }
+      h1 {
+      margin: 0;
+      font-weight: 400;
+      }
+      h3 {
+      margin: 12px 0;
+      color: #8ebf42;
+      }
+      .main-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      }
+      fieldset {
+      border: none;
+      border-top: 1px solid #8ebf42;
+      }
+      .detalhes-da-conta, .detalhes-pessoais {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+      .detalhes-da-conta >div, .detalhes-pessoais >div >div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      }
+      .detalhes-da-conta >div, .detalhes-pessoais >div, input, label {
+      width: 100%;
+      }
+      label {
+      padding: 0 5px;
+      text-align: right;
+      vertical-align: middle;
+      }
+      input {
+      padding: 5px;
+      vertical-align: middle;
+      }
+      .checkbox {
+      margin-bottom: 10px;
+      }
+      select, .filhos, .genero, .bdate-block {
+      width: calc(100% + 26px);
+      padding: 5px 0;
+      }
+      select {
+      background: transparent;
+      }
+      .genero input {
+      width: auto;
+      } 
+      .genero label {
+      padding: 0 5px 0 0;
+      } 
+      .bdate-block {
+      display: flex;
+      justify-content: space-between;
+      }
+      .aniversario select.dia {
+      width: 35px;
+      }
+      .aniversario select.mounth {
+      width: calc(100% - 94px);
+      }
+      .aniversario input {
+      width: 38px;
+      vertical-align: unset;
+      }
+      .checkbox input, .filhos input {
+      width: auto;
+      margin: -2px 10px 0 0;
+      }
+      .checkbox a {
+      color: #8ebf42;
+      }
+      .checkbox a:hover {
+      color: #82b534;
+      }
+      button {
+      width: 100%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px; 
+      border: none;
+      background: #8ebf42; 
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      }
+      button:hover {
+      background: #82b534;
+      }
+      .input-container--invalido .input {
+      border: 1px solid red;
+      }
+      .input-container--invalido .input-label {
+      color: red;
+      }
+
+      .input-container--invalido .input-mensagem-erro {
+      color: red;
+      
+      }
+      .input-mensagem-erro  {
+      display: none;
+      }
+
+      .input-container--invalido .input-mensagem-erro {
+      color: red;
+      display: block;
+      margin-top: 0.5rem;
+      padding-left: 0.5rem;
+      }
+      .input-mensagem-selecterro{
+        color: red;
+        display: none;
+      }
+      .input-mensagem-selecterror{
+        color: red;
+        display: none;
+      }
+      .niverErro{
+        color: red;
+        display: none;
+
+      }
+
+
+      @media (min-width: 568px) {
+      .detalhes-da-conta >div, .detalhes-pessoais >div {
+      width: 50%;
+      }
+      label {
+      width: 40%;
+      }
+      input {
+      width: 60%;
+      }
+      select, .filhos, .genero, .bdate-block {
+      width: calc(60% + 16px);
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+    <form  class="form" action="/">
+      <h1>Crie uma Conta Gratis</h1>
+      <fieldset>
+        <legend>
+          <h3>Detalhes da Conta</h3>
+        </legend>
+        <div  class="detalhes-da-conta">
+          <div><label for="email">E-mail*</label><input id="email" type="email" name="name" data-tipo="email" required> 
+            <span class="input-mensagem-erro">Este campo não está válido</span></div>
+          <div><label for="senha">Password*</label><input id="senha" type="password" name="name" data-tipo="senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" required> 
+            <span class="input-mensagem-erro">Este campo não está válido</span></div>
+          <div><label for="repetiremail">Repita o E-mail*</label><input id="repetiremail" type="email" name="name" data-tipo="email" required> 
+            <span class="input-mensagem-erro">Este campo não está válido</span></div>
+          <div><label for="repetirsenha">Repita o Senha*</label><input id="repetirsenha" type="password" name="name"  data-tipo="senha" required>
+            <span class="input-mensagem-erro">Este campo não está válido</span></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Detalhes Pessoais</h3>
+        </legend>
+        <div  class="detalhes-pessoais">
+          <div>
+            <div class="input-container"><label for="nome">Name*</label><input id="nome" type="text" name="name" data-tipo="nome" required>
+              <span class="input-mensagem-erro">Este campo não está válido</span></div>
+            <div class="input-container"><label for="tel">Phone*</label><input id="tel" maxlength="15" autocomplete="off" onkeyup="mascaraTel()" type="tel" name="name" data-tipo="telefone" required>
+              <span class="input-mensagem-erro">Este campo não está válido</span></div>
+            <div class="input-container"><label for="rua">Street</label><input id="rua" type="text" name="name" data-tipo="rua">
+              <span class="input-mensagem-erro">Este campo não está válido</span></div>
+            <div class="input-container"><label for="cidade">City*</label><input id="cidade" type="text" name="name" data-tipo="cidade" required>
+              <span class="input-mensagem-erro">Este campo não está válido</span></div>
+            <div class="input-container">
+              <label for="pais">País*</label>  
+              <select id="pais" data-tipo="pais"required>
+                <option value=""></option>
+                <option value="Espanha">Espanha</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Alemanha">Alemanha</option>
+                <option value="Franca">França</option>
+                <option value="USA">USA</option>
+                <option value="Portugal">Portugal</option>
+              </select>
+              <span class="input-mensagem-selecterro">Por favor escolha seu pais</span>
+            </div>
+            <div class="input-container"><label for="website">Website</label><input id="website" type="text" name="name"></div>
+          </div>
+          <div>
+            <div>
+              <label>Gênero*</label>
+              <div class="genero input-container">
+                <input type="radio" value="masculino" id="masculino" name="genero" data-tipo="genero"/>
+                <label for="masculino" class="radio">Masculino</label>
+                <input type="radio" value="feminino" id="feminino" name="genero" data-tipo="genero" required/>
+                <label for="feminino" class="radio">Feminino</label>
+                <span class="input-mensagem-erro"></span>
+              </div>
+            </div>
+            <div class="aniversario">
+              <label for="niver">Aniversario*</label>
+              <div class="bdate-block input-container">
+                <select id="dia" class="dia" data-tipo="niver" required>
+                  <option value=""></option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                <select id="mes" class="mounth" data-tipo="niver" required>
+                  <option value=""></option>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+                <input id="ano" type="text" name="name" data-tipo="niver" pattern="\\d{4}" required>
+                <span class="input-mensagem-erro niverErro"> Por favor digite a data do seu niver</span>
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="nacionalidade">Nacionalidade*</label>              
+              <select id="nacionalidade" data-tipo="nacionalidade" required>
+                <option value="zero"></option>
+                <option value="Armenian">Armenian</option>
+                <option value="Russian">Russian</option>
+                <option value="German">German</option>
+                <option value="French">French</option>
+                <option value="American">American</option>
+                <option value="English">English</option>
+              </select>
+              <span class="input-mensagem-selecterror">Por favor escolha seu pais</span>
+
+            </div>
+            <div>
+              <label for="filhos">filhos*</label>
+              <div class="filhos input-container"><input id="filhos" type="checkbox" name="name" data-tipo="filhos" required></div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Termos e correspondência</h3>
+        </legend>
+        <div  class="terms-mailing">
+          <div class="checkbox input-container">
+            <input type="checkbox" name="checkbox" data-tipo="aceito" required><span>Eu aceito o <a href="#">Política de privacidade para Minha Empresa.</a></span>
+          </div>
+          <div class="checkbox input-container">
+            <input type="checkbox" name="checkbox"><span>Quero receber ofertas personalizadas do seu site</span>
+          </div>
+      </fieldset>
+      <button id="enviar" type="submit" href="/">Enviar</button>
+    </form>
+    </div> 
+  <script src="vadicao.js"></script>
+  <script src="select.js"></script>
+  </body>
+</html>
